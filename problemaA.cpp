@@ -2,11 +2,9 @@
 using namespace std;
 
 int main(){
-    int n, AUX;
+    int n, AUX, A[1000]; //El arreglo A tiene un tamaño constante de 1000
 
     cin >> n;
-
-    int A[n];
 
     for (int i = 0; i < n; i++) {
         cin >> A[i];
