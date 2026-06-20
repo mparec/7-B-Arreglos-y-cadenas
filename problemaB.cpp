@@ -16,13 +16,14 @@ int main(){
     }
 
     for (int i = 0; i < n; i++) {
-        int coincidencias = 0;
+        bool es_palindromo = true;
         for (int j = 0; j < int((textos[i].length())/2); j++) {
-            if (textos[i][j] == textos[i][textos[i].length() - 1 - j]) {
-                coincidencias++;
+            if (textos[i][j] != textos[i][textos[i].length() - 1 - j]) {
+                es_palindromo = false;
+                break;
             }
         }
-        if (int((textos[i].length())/2) == coincidencias) {
+        if (es_palindromo == true) {
             cout << "P" << endl;
         } else {
             cout << "NP" << endl;
