@@ -8,6 +8,10 @@ int main(){
 
     cin >> n >> c;
 
+    if (n < 1 || n > 1000000 || c < 1 || c > 1000000){
+        return 0;
+    }
+
     for (int i = 0; i < n; i++) {
         A[i] = 0; // Rellenar valores vacios con el valor 0
     }
